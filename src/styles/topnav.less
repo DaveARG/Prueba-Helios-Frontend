@@ -1,0 +1,125 @@
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #0095ff;
+  color: white;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+
+  &__logo {
+    height: 24px;
+    width: auto;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &-item {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 14px;
+      padding: 8px 12px;
+      transition: color 0.2s ease;
+
+      &-arrow_down {
+        margin-left: 4px;
+        margin-bottom: 1px;
+        cursor: pointer;
+      }
+
+      &:hover {
+        color: white;
+      }
+
+      &.active {
+        color: white;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 8px 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 18px;
+  }
+
+  &__action-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  &__user-avatar {
+    width: 32px;
+    height: 32px;
+    background: url('../assets/avatar.png') no-repeat center/cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-initial {
+      font-weight: 500;
+      padding-bottom: 2px;
+    }
+  }
+
+  &__user-text {
+    font-size: 14px;
+  }
+}
+
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  background-color: #EA6364;
+  color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
